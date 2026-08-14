@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kiksoz Mauritius | Retail & Great Finds</title>
+
+    <meta name="description" content="Kiksoz Mauritius is where the Kiksoz adventure began, bringing together retail, distinctive products, and great finds discovered with curiosity and care.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #fffdf7;
+            color: #183b66;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            padding: 28px 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .location-link {
+            color: #164f8a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .location-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Main */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home-title {
+            text-align: center;
+            padding-top: 55px;
+            color: #164f8a;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .home-location {
+            text-align: center;
+            margin-top: 5px;
+            color: #183b66;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .center-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Photography area will be added later */
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #183b66;
+        }
+
+        footer a {
+            color: #183b66;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header {
+                padding: 22px 20px;
+            }
+
+            .home-title {
+                font-size: 2.2rem;
+                padding-top: 45px;
+            }
+
+            .home-location {
+                font-size: 0.9rem;
+            }
+
+            .center-content {
+                padding: 35px 20px;
+            }
+
+            footer {
+                padding: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="location-link" href="location.html">Location</a>
+    </header>
+
+    <main>
+        <h1 class="home-title">Kiksoz</h1>
+
+        <div class="home-location">Mauritius</div>
+
+        <section class="center-content">
+            <!-- Photography content will be decided later -->
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            Do not change &copy; Kiksoz 2025-2026
+        </div>
+
+        <div class="footer-right">
+            <a href="terms-of-use.html">Terms</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/kiksoz_"
+               target="_blank"
+               rel="noopener noreferrer">Follow</a>
+            <span>|</span>
+            <a href="mailto:info@kiksoz.com">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
