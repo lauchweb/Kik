@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kiksoz Mauritius | Retail & Great Finds</title>
+    <title>Kiksoz Mauritius | Location</title>
 
-    <meta name="description" content="Kiksoz Mauritius is where the Kiksoz adventure began, bringing together retail, distinctive products, and great finds discovered with curiosity and care.">
+    <meta name="description" content="Find Kiksoz Mauritius, including our location, contact details, phone number and opening hours.">
 
     <meta name="robots" content="index, follow">
 
@@ -31,27 +31,6 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* Header */
-        header {
-            width: 100%;
-            padding: 28px 40px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .location-link {
-            color: #164f8a;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 600;
-            transition: opacity 0.2s ease;
-        }
-
-        .location-link:hover {
-            opacity: 0.7;
-        }
-
         /* Main */
         main {
             flex: 1;
@@ -60,7 +39,7 @@
             align-items: center;
         }
 
-        .home-title {
+        .page-title {
             text-align: center;
             padding-top: 55px;
             color: #164f8a;
@@ -69,7 +48,7 @@
             letter-spacing: -1px;
         }
 
-        .home-location {
+        .page-location {
             text-align: center;
             margin-top: 5px;
             color: #183b66;
@@ -78,29 +57,42 @@
             letter-spacing: 0.5px;
         }
 
-        /* Photograph */
-        .photo-section {
+        /* Location Information */
+        .location-content {
             width: 100%;
             max-width: 760px;
-            text-align: center;
-            margin-top: 60px;
+            margin-top: 70px;
             padding: 0 20px;
         }
 
-        .photo-section img {
-            display: block;
-            width: 100%;
-            max-height: 430px;
-            object-fit: cover;
-            border-radius: 2px;
+        .location-item {
+            margin-bottom: 38px;
         }
 
-        .photo-text {
-            max-width: 600px;
-            margin: 60px auto 0;
+        .location-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .location-label {
+            color: #164f8a;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
+
+        .location-value {
             color: #183b66;
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.7;
+        }
+
+        .location-value a {
+            color: #183b66;
+            text-decoration: none;
+        }
+
+        .location-value a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -131,32 +123,22 @@
 
         /* Mobile */
         @media (max-width: 600px) {
-            header {
-                padding: 22px 20px;
-            }
-
-            .home-title {
+            .page-title {
                 font-size: 2.2rem;
                 padding-top: 45px;
             }
 
-            .home-location {
+            .page-location {
                 font-size: 0.9rem;
             }
 
-            .photo-section {
-                margin-top: 45px;
+            .location-content {
+                margin-top: 55px;
                 padding: 0 20px;
             }
 
-            .photo-section img {
-                max-height: 300px;
-            }
-
-            .photo-text {
-                margin-top: 45px;
-                font-size: 0.9rem;
-                line-height: 1.6;
+            .location-item {
+                margin-bottom: 32px;
             }
 
             footer {
@@ -169,28 +151,41 @@
 
 <body>
 
-    <header>
-        <a class="location-link" href="location.html">Location</a>
-    </header>
-
     <main>
-        <h1 class="home-title">Kiksoz</h1>
 
-        <div class="home-location">Mauritius</div>
+        <h1 class="page-title">Kiksoz</h1>
 
-        <section class="photo-section">
+        <div class="page-location">Mauritius</div>
 
-            <img src="mauritius.jpg" alt="">
+        <section class="location-content">
 
-            <p class="photo-text">
-                Mauritius is where Kiksoz took its first steps. It is where we
-                began exploring, finding, and bringing together the things that
-                caught our attention. Our presence here is part of that ongoing
-                journey — curious about what is around us, while always looking
-                a little further.
-            </p>
+            <div class="location-item">
+                <div class="location-label">Address</div>
+                <div class="location-value">
+                    [Your address]
+                </div>
+            </div>
+
+            <div class="location-item">
+                <div class="location-label">Phone</div>
+                <div class="location-value">
+                    <a href="tel:+230XXXXXXXX">
+                        +230 XX XX XX XX
+                    </a>
+                </div>
+            </div>
+
+            <div class="location-item">
+                <div class="location-label">Opening Hours</div>
+                <div class="location-value">
+                    Monday – Friday: [Hours]<br>
+                    Saturday: [Hours]<br>
+                    Sunday: [Hours]
+                </div>
+            </div>
 
         </section>
+
     </main>
 
     <footer>
