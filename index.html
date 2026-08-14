@@ -40,7 +40,13 @@
             align-items: center;
         }
 
-        .about-link {
+        .header-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .header-link {
             color: #164f8a;
             text-decoration: none;
             font-size: 0.95rem;
@@ -48,7 +54,7 @@
             transition: opacity 0.2s ease;
         }
 
-        .about-link:hover {
+        .header-link:hover {
             opacity: 0.7;
         }
 
@@ -109,6 +115,10 @@
                 padding: 22px 20px;
             }
 
+            .header-links {
+                gap: 18px;
+            }
+
             .home-title {
                 font-size: 2.2rem;
                 padding-top: 45px;
@@ -125,14 +135,16 @@
 <body>
 
     <header>
-        <a class="about-link" href="about.html">About</a>
+        <div class="header-links">
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="location.html">Find Us</a>
+        </div>
     </header>
 
     <main>
         <h1 class="home-title">Kiksoz</h1>
 
         <section class="center-content">
-            <!-- Center content will be decided later -->
         </section>
     </main>
 
@@ -144,7 +156,7 @@
         <div class="footer-right">
             <a href="policy.html">Terms</a>
             <span>|</span>
-             <a href="https://www.instagram.com/kiksoz_"
+            <a href="https://www.instagram.com/kiksoz_"
                target="_blank"
                rel="noopener noreferrer">Follow</a>
             <span>|</span>
