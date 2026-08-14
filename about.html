@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>About Kiksoz | Retail & Great Finds</title>
+
+    <meta name="description" content="Learn about Kiksoz, a retail-focused company exploring the world for exceptional products, distinctive gear, and great finds.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #fffdf7;
+            color: #183b66;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            padding: 28px 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .home-link {
+            color: #164f8a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .home-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Main */
+        main {
+            flex: 1;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 55px 40px 80px;
+        }
+
+        .page-title {
+            color: #164f8a;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 45px;
+        }
+
+        .about-content {
+            max-width: 720px;
+        }
+
+        .about-content p {
+            font-size: 1.08rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #183b66;
+        }
+
+        .about-content .statement {
+            color: #164f8a;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+
+        /* Back to Home */
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: #164f8a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-home:hover {
+            opacity: 0.7;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #183b66;
+        }
+
+        footer a {
+            color: #183b66;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header {
+                padding: 22px 20px;
+            }
+
+            main {
+                padding: 45px 20px 60px;
+            }
+
+            .page-title {
+                font-size: 2.2rem;
+                margin-bottom: 35px;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+
+            .about-content .statement {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                padding: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="home-link" href="index.html">Home</a>
+    </header>
+
+    <main>
+        <h1 class="page-title">About Kiksoz</h1>
+
+        <section class="about-content">
+
+            <p class="statement">
+                Kiksoz goes beyond the ordinary, sourcing exceptional products,
+                distinctive gear, and great finds from around the world.
+            </p>
+
+            <p>
+                We are focused on retail and on finding the things worth bringing
+                to stores and businesses. We explore different markets, ideas,
+                products, and possibilities in search of what stands out.
+            </p>
+
+            <p>
+                Kiksoz is also part of a wider group of companies, with interests
+                and activities that extend beyond a single retail store or product.
+                Our approach is simple: look further, discover better, and bring
+                interesting finds to the people and businesses that can make use
+                of them.
+            </p>
+
+            <a class="back-home" href="index.html">← Back to Home</a>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            Do not change &copy; Kiksoz 2025-2026
+        </div>
+
+        <div class="footer-right">
+            <a href="terms.html">Terms</a>
+            <span>|</span>
+            <a href="mailto:info@kiksoz.com">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
