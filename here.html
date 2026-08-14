@@ -52,7 +52,8 @@
         .locations {
             width: 100%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             margin-top: 110px;
         }
 
@@ -65,6 +66,20 @@
         }
 
         .location-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Back to Home */
+        .back-home {
+            margin-top: 70px;
+            color: #164f8a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-home:hover {
             opacity: 0.7;
         }
 
@@ -105,6 +120,10 @@
                 margin-top: 80px;
             }
 
+            .back-home {
+                margin-top: 55px;
+            }
+
             footer {
                 padding: 20px;
                 font-size: 0.85rem;
@@ -120,8 +139,13 @@
         <h1 class="page-title">Kiksoz</h1>
 
         <section class="locations">
+
             <a class="location-link"
                href="https://kiksoz.com">Mauritius</a>
+
+            <a class="back-home"
+               href="index.html">← Back to Home</a>
+
         </section>
 
     </main>
