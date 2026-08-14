@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kiksoz | Retail & Great Finds</title>
-    <meta name="description" content="Kiksoz is a retail company dedicated to discovering great products, gear, and opportunities from around the world.">
+    <title>Kiksoz | Retail & Great Find</title>
+
+    <meta name="description" content="Kiksoz goes beyond the ordinary, sourcing exceptional products, distinctive gear, and gret finds from around the world.">
+
+    <meta name="robots" content="index, follow">
 
     <style>
         * {
@@ -28,6 +31,28 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        /* Header */
+        header {
+            width: 100%;
+            padding: 28px 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .about-link {
+            color: #164f8a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .about-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Main */
         main {
             flex: 1;
             display: flex;
@@ -36,7 +61,7 @@
 
         .home-title {
             text-align: center;
-            padding-top: 90px;
+            padding-top: 55px;
             color: #164f8a;
             font-size: 3rem;
             font-weight: 700;
@@ -52,6 +77,7 @@
             padding: 40px 20px;
         }
 
+        /* Footer */
         footer {
             width: 100%;
             padding: 24px 40px;
@@ -77,10 +103,15 @@
             align-items: center;
         }
 
+        /* Mobile */
         @media (max-width: 600px) {
+            header {
+                padding: 22px 20px;
+            }
+
             .home-title {
                 font-size: 2.2rem;
-                padding-top: 60px;
+                padding-top: 45px;
             }
 
             footer {
@@ -92,6 +123,10 @@
 </head>
 
 <body>
+
+    <header>
+        <a class="about-link" href="about.html">About</a>
+    </header>
 
     <main>
         <h1 class="home-title">Kiksoz</h1>
