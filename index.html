@@ -1,129 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kiksoz Official Website</title>
-  <meta name="description" content="Kiksoz Official Website">
+    <title>Kiksoz | Retail & Great Finds</title>
+    <meta name="description" content="Kiksoz is a retail company dedicated to discovering great products, gear, and opportunities from around the world.">
 
-  <style>
-    body {
-      margin: 0;
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .header {
-      padding: 30px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        html,
+        body {
+            min-height: 100%;
+        }
 
-    .title-block {
-      display: flex;
-      flex-direction: column;
-    }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #fffdf7;
+            color: #183b66;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    .title {
-      font-size: 34px;
-      font-weight: 700;
-      color: #123996;
-      margin: 0;
-    }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .subtitle {
-      margin: 8px 0 0 0;
-      font-size: 16px;
-      color: #555;
-    }
+        .home-title {
+            text-align: center;
+            padding-top: 90px;
+            color: #164f8a;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
 
-    .nav {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: Arial, sans-serif;
-    }
+        .center-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-    .info {
-      color: #ff0000;
-    }
+        footer {
+            width: 100%;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #183b66;
+        }
 
-    .contact,
-    .about {
-      color: #555;
-    }
+        footer a {
+            color: #183b66;
+            text-decoration: none;
+        }
 
-    .spacer {
-      flex: 1;
-    }
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      background: transparent;
-    }
+        .footer-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
 
-    .footer-pc {
-      color: #555;
-      font-weight: 400;
-    }
+        @media (max-width: 600px) {
+            .home-title {
+                font-size: 2.2rem;
+                padding-top: 60px;
+            }
 
-    .footer-me {
-      color: #123996;
-      font-weight: 700;
-    }
-
-    @media (max-width: 600px) {
-      .header {
-        padding: 20px;
-        align-items: center;
-      }
-
-      .title {
-        font-size: 26px;
-      }
-
-      .subtitle {
-        font-size: 14px;
-      }
-
-      .nav {
-        font-size: 18px;
-        gap: 20px;
-      }
-    }
-  </style>
+            footer {
+                padding: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="header">
-    <div class="title-block">
-      <h1 class="title">Kiksoz</h1>
-      <p class="subtitle">An address</p>
-    </div>
+    <main>
+        <h1 class="home-title">Kiksoz</h1>
 
-    <div class="nav">
-      <div class="about">About</div>
-    </div>
-  </div>
-  <div class="spacer"></div>
+        <section class="center-content">
+            <!-- Center content will be decided later -->
+        </section>
+    </main>
 
-  <footer>
-    <span class="footer-pc"> ©</span>
-    <span class="footer-me">Kiksoz</span>
-    <span class="footer-2026">2026</span>
-    <a href="https://instagram.com/kiksoz_" target="_blank" rel="noopener noreferrer">Follow</a>
-  </footer>
+    <footer>
+        <div>
+           Do not change &copy; Kiksoz 2025-2026
+        </div>
+
+        <div class="footer-right">
+            <a href="terms.html">Terms</a>
+            <span>|</span>
+            <a href="mailto:info@kiksoz.com">Contact</a>
+        </div>
+    </footer>
 
 </body>
 </html>
