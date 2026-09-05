@@ -57,6 +57,13 @@
             margin-top: 110px;
         }
 
+        .location-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 14px;
+        }
+
         .location-link {
             color: #164f8a;
             text-decoration: underline;
@@ -72,11 +79,11 @@
         }
 
         .location-note {
-            margin-top: 12px;
             color: #183b66;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             line-height: 1.5;
-            text-align: center;
+            font-weight: 400;
+            white-space: nowrap;
         }
 
         /* Here Statement */
@@ -142,8 +149,12 @@
                 margin-top: 80px;
             }
 
+            .location-row {
+                gap: 10px;
+            }
+
             .location-note {
-                font-size: 0.85rem;
+                font-size: 0.78rem;
             }
 
             .here-statement {
@@ -173,11 +184,13 @@
 
         <section class="locations">
 
-            <a class="location-link"
-               href="mauritius.html">Mauritius</a>
+            <div class="location-row">
+                <a class="location-link"
+                   href="mauritius.html">Mauritius</a>
 
-            <div class="location-note">
-                Where it all started.
+                <span class="location-note">
+                    Where it all started.
+                </span>
             </div>
 
             <a class="back-home"
