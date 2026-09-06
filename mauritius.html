@@ -31,33 +31,6 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* Header */
-        header {
-            width: 100%;
-            padding: 28px 40px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .header-links {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        .location-link {
-            color: #164f8a;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 600;
-            transition: opacity 0.2s ease;
-        }
-
-        .location-link:hover {
-            opacity: 0.7;
-        }
-
         /* Main */
         main {
             flex: 1;
@@ -87,7 +60,7 @@
         /* Photograph */
         .photo-section {
             width: 100%;
-            max-width: 1150px;
+            max-width: 900px;
             text-align: center;
             margin-top: 85px;
             padding: 0 20px;
@@ -97,24 +70,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 60px;
+            gap: 55px;
         }
 
         .photo-info {
-            flex: 0 0 150px;
+            flex: 0 0 145px;
             color: #183b66;
             font-size: 0.82rem;
             line-height: 1.5;
             font-weight: 400;
-            text-align: center;
         }
 
         .photo-info.left {
-            text-align: center;
+            text-align: right;
         }
 
         .photo-info.right {
-            text-align: center;
+            text-align: left;
         }
 
         .photo-info a {
@@ -129,17 +101,17 @@
 
         .photo-section img {
             display: block;
-            flex: 1;
             width: 100%;
-            max-width: 800px;
+            max-width: 650px;
             max-height: 450px;
             object-fit: cover;
             border-radius: 2px;
         }
 
+        /* Description */
         .photo-text {
             max-width: 600px;
-            margin: 75px auto 0;
+            margin: 70px auto 0;
             color: #183b66;
             font-size: 0.95rem;
             line-height: 1.7;
@@ -148,7 +120,7 @@
         /* Back to Here */
         .back-here {
             display: inline-block;
-            margin-top: 65px;
+            margin-top: 60px;
             color: #164f8a;
             text-decoration: none;
             font-size: 0.95rem;
@@ -188,13 +160,6 @@
 
         /* Mobile */
         @media (max-width: 600px) {
-            header {
-                padding: 22px 20px;
-            }
-
-            .header-links {
-                gap: 18px;
-            }
 
             .home-title {
                 font-size: 2.2rem;
@@ -206,22 +171,23 @@
             }
 
             .photo-section {
-                margin-top: 65px;
+                margin-top: 60px;
                 padding: 0 20px;
             }
 
             .photo-frame {
-                gap: 18px;
+                gap: 24px;
             }
 
             .photo-info {
-                flex: 0 0 90px;
-                font-size: 0.75rem;
+                flex: 0 0 75px;
+                font-size: 0.72rem;
                 line-height: 1.5;
             }
 
             .photo-section img {
-                max-height: 310px;
+                max-width: 100%;
+                max-height: 320px;
             }
 
             .photo-text {
@@ -251,17 +217,8 @@
 
 <body>
 
-    <header>
-        <div class="header-links">
-            <a class="location-link"
-               href="https://kiksoz.com/about.html">About</a>
-
-            <a class="location-link"
-               href="find-us.html">Find Us</a>
-        </div>
-    </header>
-
     <main>
+
         <h1 class="home-title">Kiksoz</h1>
 
         <div class="home-location">Mauritius</div>
@@ -295,6 +252,7 @@
                href="here.html">← Back to Here</a>
 
         </section>
+
     </main>
 
     <footer>
