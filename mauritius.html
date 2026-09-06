@@ -68,14 +68,14 @@
 
         .photo-frame {
             width: 100%;
-            display: flex;
+            display: grid;
+            grid-template-columns: 150px 720px 150px;
             align-items: center;
             justify-content: center;
-            gap: 60px;
+            column-gap: 50px;
         }
 
         .photo-info {
-            flex: 0 0 150px;
             color: #183b66;
             font-size: 0.82rem;
             line-height: 1.5;
@@ -103,8 +103,8 @@
         .photo-section img {
             display: block;
             width: 720px;
-            max-width: 100%;
             height: 470px;
+            max-width: 100%;
             object-fit: cover;
             border-radius: 2px;
         }
@@ -160,6 +160,28 @@
         }
 
         /* Mobile */
+        @media (max-width: 900px) {
+
+            .photo-section {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+
+            .photo-frame {
+                grid-template-columns: 90px minmax(0, 1fr) 90px;
+                column-gap: 28px;
+            }
+
+            .photo-section img {
+                width: 100%;
+                height: 350px;
+            }
+
+            .photo-info {
+                font-size: 0.75rem;
+            }
+        }
+
         @media (max-width: 600px) {
 
             .home-title {
@@ -173,24 +195,21 @@
 
             .photo-section {
                 margin-top: 85px;
-                padding: 0 15px;
             }
 
             .photo-frame {
-                gap: 18px;
+                grid-template-columns: 70px minmax(0, 1fr) 70px;
+                column-gap: 28px;
             }
 
             .photo-info {
-                flex: 0 0 65px;
                 font-size: 0.72rem;
                 line-height: 1.5;
             }
 
             .photo-section img {
                 width: 100%;
-                max-width: 100%;
                 height: 350px;
-                object-fit: cover;
             }
 
             .photo-text {
@@ -231,8 +250,8 @@
             <div class="photo-frame">
 
                 <div class="photo-info left">
-                    10am–8pm<br>
-                    Wednesday–Saturday
+                    <span>10am–8pm</span><br>
+                    <span>Wednesday–Saturday</span>
                 </div>
 
                 <img src="mauritius.jpg" alt="">
