@@ -93,9 +93,43 @@
             padding: 0 20px;
         }
 
+        .photo-frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .photo-info {
+            flex: 0 0 130px;
+            color: #183b66;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .photo-info.left {
+            text-align: right;
+        }
+
+        .photo-info.right {
+            text-align: left;
+        }
+
+        .photo-info a {
+            color: #164f8a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .photo-info a:hover {
+            opacity: 0.7;
+        }
+
         .photo-section img {
             display: block;
             width: 100%;
+            max-width: 760px;
             max-height: 430px;
             object-fit: cover;
             border-radius: 2px;
@@ -174,6 +208,15 @@
                 padding: 0 20px;
             }
 
+            .photo-frame {
+                gap: 18px;
+            }
+
+            .photo-info {
+                flex: 0 0 90px;
+                font-size: 0.75rem;
+            }
+
             .photo-section img {
                 max-height: 300px;
             }
@@ -222,7 +265,20 @@
 
         <section class="photo-section">
 
-            <img src="mauritius.jpg" alt="">
+            <div class="photo-frame">
+
+                <div class="photo-info left">
+                    10am–8pm<br>
+                    Wednesday–Saturday
+                </div>
+
+                <img src="mauritius.jpg" alt="">
+
+                <div class="photo-info right">
+                    <a href="tel:+230XXXXXXXX">Call</a>
+                </div>
+
+            </div>
 
             <p class="photo-text">
                 Mauritius is where Kiksoz took its first steps. It is where we
