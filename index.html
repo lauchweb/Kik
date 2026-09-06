@@ -63,39 +63,43 @@
             flex: 1;
             display: flex;
             flex-direction: column;
+            align-items: center;
+        }
+
+        .home-heading {
+            text-align: center;
+            padding-top: 55px;
         }
 
         .home-title {
-            text-align: center;
-            padding-top: 55px;
             color: #164f8a;
             font-size: 3rem;
             font-weight: 700;
             letter-spacing: -1px;
         }
 
+        .home-philosophy {
+            margin-top: 5px;
+            color: #164f8a;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
         .center-content {
             flex: 1;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 10px 20px 40px;
+            padding: 20px 20px 40px;
         }
 
         .home-intro {
             width: 100%;
             max-width: 720px;
             margin: 0 auto;
-        }
-
-        .home-philosophy {
-            margin-top: 0;
-            margin-bottom: 22px;
-            color: #164f8a;
-            font-size: 1.05rem;
-            font-weight: 600;
-            line-height: 1.6;
         }
 
         .home-text {
@@ -143,20 +147,22 @@
                 gap: 18px;
             }
 
-            .home-title {
-                font-size: 2.2rem;
+            .home-heading {
                 padding-top: 45px;
             }
 
-            .center-content {
-                padding: 5px 24px 35px;
+            .home-title {
+                font-size: 2.2rem;
             }
 
             .home-philosophy {
-                margin-top: 0;
-                margin-bottom: 20px;
+                margin-top: 3px;
                 font-size: 1rem;
                 line-height: 1.55;
+            }
+
+            .center-content {
+                padding: 20px 24px 35px;
             }
 
             .home-text {
@@ -189,14 +195,17 @@
     </header>
 
     <main>
-        <h1 class="home-title">Kiksoz</h1>
+
+        <div class="home-heading">
+            <h1 class="home-title">Kiksoz</h1>
+
+            <div class="home-philosophy">
+                Discovering what's worth finding.
+            </div>
+        </div>
 
         <section class="center-content">
             <div class="home-intro">
-
-                <div class="home-philosophy">
-                    Discovering what's worth finding.
-                </div>
 
                 <div class="home-text">
                     We believe the best things are not always the things you set out to find. Sometimes they appear along the way, through a place you did not expect, a conversation you did not plan, or a detail that would have been easy to overlook.
